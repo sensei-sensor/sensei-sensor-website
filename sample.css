@@ -3,13 +3,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
+  height: 80px;
   width: 360px;
   background-color: white;
-  font-size: 25;
+  font-size: 28;
 }
 .back {
-  height: 570px;
+  height: 560px;
   width: 360px;
   background-color: #FF8C33;
 }
@@ -18,7 +18,7 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  top: 40px;
+  top: 30px;
   border-radius: 25px;
   height: 500px;
   width: 290px;
@@ -30,7 +30,7 @@
   align-items: center;
   position : relative;
   top: 50px;
-  font-size: 24;
+  font-size: 28;
 }
 .textbox{
   font-size: 16px;
@@ -41,7 +41,7 @@
   box-sizing: border-box;
 }
 .textbg1{
-  height: 40px;
+  height: 50px;
   width: 80%;
   display: flex;
   justify-content: center;
@@ -54,7 +54,7 @@
   border-radius: 25px;
 }
 .textbg2{
-  height: 40px;
+  height: 50px;
   width: 80%;
   display: flex;
   justify-content: center;
@@ -128,7 +128,7 @@ a.btn-border-shadow:before {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 
-  border: 3px solid #000;
+  border: 3px solid #4CC4FF;
   border-radius: 0.5rem;
   display: flex;
   justify-content: center;
