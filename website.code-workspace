@@ -1,15 +1,15 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {
-		"editor.detectIndentation": false,
-		"editor.tabSize": 4,
-		"files.autoSave": "afterDelay",
-		"files.autoSaveDelay": 1000,
-		"editor.renderWhitespace": "all",
-		"editor.fontFamily": "Ricty Diminished"
-	}
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "editor.renderWhitespace": "all",
+    "editor.fontFamily": "Ricty Diminished"
+  }
 }
