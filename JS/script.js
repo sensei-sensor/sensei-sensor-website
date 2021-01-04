@@ -2,12 +2,15 @@
 
 $('#get').on('click', () => {
   $.ajax({
-    url: 'vm.local:3000/website',
-    datatype: 'JSON',
+    url: 'http://vm.local:3000/website',
+    dataType: 'JSON',
     type: 'GET'
   })
     .done((res) => {
-      $('#info').html(res);
+      console.log(res);
+      console.log(typeof (res));
+      let senseiData = JSON.parse(res);
+      $('#info').html(senseiData);
     })
     .fail((err) => {
       $('#info').html(err);
