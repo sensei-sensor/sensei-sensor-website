@@ -12,13 +12,32 @@
   background-color: whitesmoke;
 }
 
-.where {
-  padding-top: 5px;
-  width: 200px;
-  float: left;
+.user_name {
+  margin: 5px 5px 0px 5px;
+  height: 30px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+
+  border-bottom: 1.5px solid #add8e6;
+  transform: rotate(0.24deg);
 }
 
-.right-where {
-  width: 30px;
-  float: right;
+.low {
+  overflow: hidden;
+  padding: 7px 5px 0px 5px ;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.description{
+  overflow: hidden;
+  width: auto;
+}
+.data {
+  width: auto;
+  text-align: right;
+  margin-left: auto;
 }
