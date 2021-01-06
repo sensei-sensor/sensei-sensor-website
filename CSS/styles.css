@@ -1,17 +1,31 @@
 body {
-  background-color: #FFC599;
-  font-family: 'Roboto', 'Noto Sans JP' , sans-serif;
+  background-color: #ffc599;
+  font-family: "Roboto", "Noto Sans JP", sans-serif;
 }
 
 header {
+  height: 80px;
+
+  font: 32px Roboto, normal, normal;
+  line-height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
   background-color: white;
   color: #ff8c33;
-  font: 32px Roboto, normal, normal;
-  height: 80px;
-  line-height: 28px;
-  text-align: center;
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  position : relative;
+}
+
+.main {
+  width: 309px;
+  height: 488px;
+
+  background: #ffffff;
+  border-radius: 33px;
+
+  margin: 0 auto;
+  margin-top: 30px;
+
+  padding-top: 10px;
 }
