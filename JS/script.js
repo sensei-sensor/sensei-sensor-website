@@ -15,7 +15,7 @@ function get() {
       }
     })
     .fail((err) => {
-      $('#info').html(err);
+      console.log(err);
     });
 };
 
