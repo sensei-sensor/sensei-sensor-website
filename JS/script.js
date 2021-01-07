@@ -10,7 +10,7 @@ function get() {
   })
     .done((res) => {
       for (let key in res) {
-        let createdAt = dateFormat.format(new Date(res[key].created_at), 'yyyy/MM/dd hh:mm');\
+        let createdAt = dateFormat.format(new Date(res[key].created_at), 'yyyy/MM/dd hh:mm');
         $('<div class="card"><div class="user_name">' + res[key].user_name + '</div><div class="infomation"><div class="low"><div class="description">現在地:</div><div id="address" class="data">' + res[key].room_name + '</div></div><div class="low"><div class="description">更新時刻:</div><div id="created_at" class="data">' + createdAt + '</div></div></div></div>').appendTo('.main')
       }
     })
