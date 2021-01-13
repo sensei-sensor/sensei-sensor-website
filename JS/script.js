@@ -2,9 +2,11 @@
 
 window.onload = get();
 
+let serverURL = 'http://localhost:3000/website'
+
 function get() {
   $.ajax({
-    url: 'http://localhost:3000/website',
+    url: serverURL,
     dataType: 'JSON',
     type: 'GET'
   })
