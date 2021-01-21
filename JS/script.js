@@ -2,9 +2,8 @@
 
 window.onload = get();
 
-let serverURL = 'http://localhost:3000/website'
-
 function get() {
+  let serverURL = 'http://localhost:3000/website'
   $.ajax({
     url: serverURL,
     dataType: 'JSON',
@@ -13,7 +12,14 @@ function get() {
     .done((res) => {
       for (let key in res) {
         let createdAt = dateFormat.format(new Date(res[key].created_at), 'yyyy/MM/dd hh:mm');
-        $('<div class="card"><div class="user_name">' + res[key].user_name + '</div><div class="infomation"><div class="low"><div class="description">現在地:</div><div id="address" class="data">' + res[key].room_name + '</div></div><div class="low"><div class="description">更新時刻:</div><div id="created_at" class="data">' + createdAt + '</div></div></div></div>').appendTo('.main')
+        let room_name = res[key].room_name;
+        if (res[key].is_public == 1) {
+          room_name = "非公開設定"
+            $('<div class="card" ><div class="user_name">' + res[key].user_name + '</div><div class="infomation"><div class="low"><div class="description">現在地:</div><div id="address" class="data">' + room_name + '</div></div></div></div>').appendTo('.main')
+        }
+        else {
+          $('<div class="card"><div class="user_name">' + res[key].user_name + '</div><div class="infomation"><div class="low"><div class="description">現在地:</div><div id="address" class="data">' + room_name + '</div></div><div class="low"><div class="description">更新時刻:</div><div id="created_at" class="data">' + createdAt + '</div></div></div></div>').appendTo('.main')
+        }
       }
     })
     .fail((err) => {
